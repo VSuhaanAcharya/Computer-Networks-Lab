@@ -27,6 +27,7 @@ public class RSA_ALG {
             if((e*d)%z==1)
                 break;
         }
+
         System.out.println("Decryption key  d is:"+d);
         System.out.println("private key is (d,n):"+d+","+n);
         in.nextLine();
@@ -71,3 +72,28 @@ public class RSA_ALG {
         return res;
     }
 }
+
+
+/*
+run:
+Enter the two large prime number for p and q:
+17 11
+Value of n:187
+value of z is:160
+Encryption key e is:3
+public key is (e,n):3,187
+Decryption key  d is:107
+private key is (d,n):107,187
+Enter the message for encryption:
+HI
+ASCII values of PT array is:
+72
+73
+Encryption:cipher text obtained
+183	
+57	
+Decryption:plain text obtained
+72.H
+73.I
+BUILD SUCCESSFUL (total time: 9 seconds)
+*/
