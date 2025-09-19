@@ -66,3 +66,15 @@ public class BellmanDemoFinal {
     }
     
 }
+/*run:
+Enter the number of vertices:
+3
+Enter the weight matrix:
+0 1 0
+0 0 -2
+-2 0 0
+Enter the source vertex:
+1
+
+ Negative weight cycle exists
+*/
